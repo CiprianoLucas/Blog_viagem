@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página inicial</title>
     <script src="https://kit.fontawesome.com/a2c864da67.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/statics/css/normalize.css">
+    <link rel="stylesheet" href="/statics/css/style.css">
 </head>
 
 <body>
-    <header id="inicio">
+<div class="border">
+    <header id="inicio" class="header">
         <h1>VIAGENS DO CIPRIANO</h1>
         <i class="fa-solid fa-plane-departure"></i>
         <p>Uma descrição bem breve aqui</p>
@@ -17,80 +20,84 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#feitas">Viagens Feitas</a></li>
-            <li><a href="#planejadas">Viagens Planejadas</a></li>
-            <li><a href="">Converse comigo!</a></li>
+            <li class="atalho--1"><a href="#inicio" class="link">Início</a></li>
+            <li class="atalho--2"><a href="#feitas" class="link">Viagens Feitas</a></li>
+            <li class="atalho--3"><a href="#planejadas" class="link">Viagens Planejadas</a></li>
+            <li class="atalho--4"><a href="" class="link">Converse comigo!</a></li>
         </ul>
     </nav>
     
     <main>
-        <section id="feitas">
+        <section id="feitas" class="viagem">
             <i class="fa-solid fa-map"></i>
             <h2>Viagens Feitas!</h2>
             <p>Uma descrição breve</p>
             <div>
                 <i class="fa-solid fa-location-dot"></i>
                 <h3>Primeira viagem</h3>
-                <img src="https://static.vecteezy.com/ti/vetor-gratis/p3/15706435-mapa-do-chile-na-america-icones-mostrando-bandeiras-e-localizacao-do-chile-vetor.jpg"
-                    alt="Mapa do Chile" height="300px">
+                <img class="img" src="https://static.vecteezy.com/ti/vetor-gratis/p3/15706435-mapa-do-chile-na-america-icones-mostrando-bandeiras-e-localizacao-do-chile-vetor.jpg"
+                    alt="Mapa do Chile" width="350px">
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis sint, omnis reiciendis, veniam nobis
                     eum recusandae dolorem earum officiis exercitationem culpa nisi accusamus quibusdam facilis eaque.
                     Quam praesentium id dignissimos?
                 </p>
+                <a href="" class="button">Saiba mais</a>
             </div>
 
             <div>
                 <i class="fa-solid fa-location-dot"></i>
                 <h3>Segunda viagem</h3>
-                <img src="https://static.vecteezy.com/ti/vetor-gratis/p3/15706435-mapa-do-chile-na-america-icones-mostrando-bandeiras-e-localizacao-do-chile-vetor.jpg"
-                    alt="Mapa do Chile" height="300px">
+                <img class="img" src="https://static.vecteezy.com/ti/vetor-gratis/p3/15706435-mapa-do-chile-na-america-icones-mostrando-bandeiras-e-localizacao-do-chile-vetor.jpg"
+                    alt="Mapa do Chile" width="350px">
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis sint, omnis reiciendis, veniam nobis
                     eum recusandae dolorem earum officiis exercitationem culpa nisi accusamus quibusdam facilis eaque.
                     Quam praesentium id dignissimos?
                 </p>
+                <a href="" class="button">Saiba mais</a>
             </div>
 
         </section>
-        <section id="planejadas">
+        <section id="planejadas" class="viagem viagem--planejada">
             <i class="fa-regular fa-map"></i>
             <h2>Viagens Planejadas!</h2>
             <p>Uma descrição breve</p>
             <div>
                 <i class="fa-solid fa-location-pin"></i>
                 <h3>Próxima a fazer</h3>
-                <img src="https://static.vecteezy.com/ti/vetor-gratis/p3/15706435-mapa-do-chile-na-america-icones-mostrando-bandeiras-e-localizacao-do-chile-vetor.jpg"
-                    alt="Mapa do Chile" height="300px">
+                <img class="img" src="https://static.vecteezy.com/ti/vetor-gratis/p3/15706435-mapa-do-chile-na-america-icones-mostrando-bandeiras-e-localizacao-do-chile-vetor.jpg"
+                    alt="Mapa do Chile" width="350px">
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis sint, omnis reiciendis, veniam nobis
                     eum recusandae dolorem earum officiis exercitationem culpa nisi accusamus quibusdam facilis eaque.
                     Quam praesentium id dignissimos?
                 </p>
+                <a href="" class="button">Saiba mais</a>
             </div>
             <div>
                 <i class="fa-solid fa-location-pin"></i>
                 <h3>Outra a fazer</h3>
-                <img src="https://static.vecteezy.com/ti/vetor-gratis/p3/15706435-mapa-do-chile-na-america-icones-mostrando-bandeiras-e-localizacao-do-chile-vetor.jpg"
-                    alt="Mapa do Chile" height="300px">
+                <img class="img" src="https://static.vecteezy.com/ti/vetor-gratis/p3/15706435-mapa-do-chile-na-america-icones-mostrando-bandeiras-e-localizacao-do-chile-vetor.jpg"
+                    alt="Mapa do Chile" width="350px">
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis sint, omnis reiciendis, veniam nobis
                     eum recusandae dolorem earum officiis exercitationem culpa nisi accusamus quibusdam facilis eaque.
                     Quam praesentium id dignissimos?
                 </p>
+                <a href="" class="button">Saiba mais</a>
             </div>     
 
         </section>
     </main>
 
     <footer>
-        <a href="">Entre em contato comigo!</a>
+        <a href="" class="link">Entre em contato comigo!</a>
         <p>&copy; Todos os direitos reservados por Lucas Cipriano</p>
     </footer>
 
 
-
+</div>
 </body>
 
 </html>
