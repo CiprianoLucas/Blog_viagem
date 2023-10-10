@@ -13,24 +13,24 @@
 <body>
    
         <header class="header__viagem">
-            <div>
+            <div class="selecionado">
             <a href="/index.html" class="link header__viagem--logo"><i class="fa-solid fa-plane-departure"></i></a>
             <a href="/index.html" class="link header__viagem--name"><h1>VIAGENS DO CIPRIANO</h1></a>
             </div>
-            <div class="header__viagem--last">        
-            <a href="/contact.html" class="link header__viagem--contact"><i class="fa-solid fa-headset"></i></a>
+            <div>        
+            <a href="/contact.html" class="link header__viagem--contact selecionado"><i class="fa-solid fa-headset"></i></a>
             </div>
         </header>
-    <div class="border">
+    <div class="container">
         <nav class="nav__viagem">
             <div>
             <i class="fa-solid fa-map"></i>
             <h2>Primeira viagem</h2>
             </div>
             <ul>
-                <li class="atalho--turista"><a href="#turistas" class="link">Impressão de turistas</a></li>
-                <li class="atalho--minha"><a href="#minha" class="link">Minha impressão</a></li>
-                <li class="atalho--plus"><a href="#curiosidade" class="link"><i class="fa-solid fa-plus"></i></a></li>
+                <li class="atalho--turista selecionado"><a href="#turistas" class="link">Impressão de turistas</a></li>
+                <li class="atalho--minha selecionado"><a href="#minha" class="link">Minha impressão</a></li>
+                <li class="atalho--plus selecionado"><a href="#curiosidade" class="link"><i class="fa-solid fa-plus"></i></a></li>
             </ul>
         </nav>
 
@@ -39,6 +39,7 @@
                 <i class="fa-solid fa-users"></i>
                 <h2>Impressão de turistas</h2>
                 <div>
+                <span>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis sint, omnis reiciendis, veniam
                         nobis
@@ -46,16 +47,18 @@
                         eaque.
                         Quam praesentium id dignissimos?
                     </p>
-                </div>
                 <img class="img"
                     src="https://static.vecteezy.com/ti/vetor-gratis/p3/15706435-mapa-do-chile-na-america-icones-mostrando-bandeiras-e-localizacao-do-chile-vetor.jpg"
                     alt="Mapa do Chile" width="350px">
+                </span>
+                </div>
 
             </section>
             <section id="minha" class="viagem viagem--segundo">
                 <i class="fa-solid fa-user-tie"></i>
                 <h2>Minha avaliação</h2>
                 <div>
+                    <span class="inverter_img">
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis sint, omnis reiciendis, veniam
                         nobis
@@ -66,24 +69,38 @@
                     <img class="img"
                         src="https://static.vecteezy.com/ti/vetor-gratis/p3/15706435-mapa-do-chile-na-america-icones-mostrando-bandeiras-e-localizacao-do-chile-vetor.jpg"
                         alt="Mapa do Chile" width="350px" >
+                    </span>
                 </div>
             </section>
             <section id="curiosidade" class="viagem viagem--terceiro">
                 <i class="fa-solid fa-plus"></i>
                 <h2>Curiosidades</h2>
-                <h3>Vídeo demonstrativo</h3>
-                 <iframe width="300" height="180" src="https://www.youtube.com/embed/DPhJUlb56Qk?si=WlxCtA5CUONULD9e"
+                <div>
+                <h3 id="video">Vídeo demonstrativo</h3>
+                 <iframe width="90%" height="250px" src="https://www.youtube.com/embed/DPhJUlb56Qk?si=WlxCtA5CUONULD9e"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                    allowfullscreen class="video"></iframe>
                 
-                <h3>Localização</h3>
-                <span>
-                <iframe 
+                <h3 id="localizacao">Localização</h3>               
+                <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212999.2717539978!2d-70.79463792699207!3d-33.472392498443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Chile!5e0!3m2!1spt-BR!2sbr!4v1696441880357!5m2!1spt-BR!2sbr"
-                    width="280" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </span>
+                    width="90%" height="250px" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                </div>
+                <div class="comentarios">
+                    <h3 id="comentarios">Comentários</h3>
+                    <dl>
+                        <dt>Marcia</dt>
+                        <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores fugiat atque tempore quos architecto optio, assumenda provident odio vitae dolore in, ex placeat magnam fugit omnis quaerat magni sint cupiditate.</dd>
+                        <dt>Adalberto</dt>
+                        <dd>Cultura local é muito legal</dd>
+                        <dt>Mirian</dt>
+                        <dd>Amaria ter ido, parece um lugar bem interessante</dd>
+                    </dl>
+                    
+
+                </div>
 
     </section>
 

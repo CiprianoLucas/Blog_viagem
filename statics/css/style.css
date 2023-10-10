@@ -28,7 +28,12 @@ h6 {
     font-family: 'Exo 2', sans-serif;
 }
 
-.border {
+h4 {
+        font-size: 1.5rem;
+
+}
+
+.container {
     display: flexbox;
     margin: 0.5em;
     justify-content: center;
@@ -116,6 +121,7 @@ h6 {
 }
 
 .viagem {
+    display: block;
     background-color: #00b140;
     color: white;
     border: 3px #007041 solid;
@@ -137,6 +143,11 @@ h6 {
     margin: 10px;
     font-size: 1.3rem;
     
+}
+
+.viagem img {
+    width: 100%;
+    height: 100%;
 }
 
 .viagem > i:first-of-type {
@@ -169,6 +180,7 @@ h6 {
 .viagem h3 {
     display: inline-block;
     font-size: 1.3em;
+    margin: 0.5em;
 }
 
 .img {
@@ -188,6 +200,11 @@ h6 {
 .viagem--terceiro {
     background-color: #ffa300;
     border: 3px #886b25 solid;
+}
+
+.viagem--terceiro div {
+    margin-top: 1em;
+
 }
 
 footer {
@@ -218,6 +235,14 @@ footer p{
     margin: 2em;
 }
 
+.selecionado:hover {
+    opacity: 80%;
+}
+
+.button:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 .header__viagem {
     color: white;
     background-color: #165c7d;
@@ -225,7 +250,8 @@ footer p{
     display: flex;
     align-items: start;
     justify-content: space-between;
-       
+    position: sticky;
+    top: 0;       
 }
 
 .header__viagem div{
@@ -234,9 +260,9 @@ footer p{
 }
 
 
-.header__viagem--last {
+.header__viagem div:last-of-type {
     border-left: white 1px solid;
-    padding: 1em 0.5em 1em 0.5em;
+    padding: 1em 0.5em;
 }
 
 .header__viagem--logo {
@@ -276,32 +302,42 @@ footer p{
     border-bottom-left-radius: 0.78em;
     border-bottom-right-radius: 0.78em;
     color: white;
+    list-style: none;
+    padding: 0em 1rem;
+    display: flex;
+    justify-content: space-between;
 
 }
 
-.nav__viagem li{
-    margin: 2px;
-    display: inline-block;
+.nav__viagem li {
+    width: 30%;
     height: 40px;
-    padding: 0.5em;
-    border-radius: 0.5em;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
 }
 
 .atalho--turista{ 
     border: 3px #007041 solid;
-    width: 90px;
     background-color: #00b140;
 }
 .atalho--minha{
     border: 3px #007dba solid;
-    width: 90px;
     background-color: #00a9ce;
 }
 .atalho--plus{
+    font-size: 1.2rem;
     border: 3px #886b25 solid;
-    width: 45px;
     background-color: #ffa300;
 }
+
+.atalho--plus i{
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+    padding: 0.3em;
+    margin: 0.3em;
+    margin-top: 0.2em;
+}
+
 
 .nav__viagem > div > i {
     border: 0.1em solid white;
@@ -322,6 +358,62 @@ footer p{
     color: white;
     border-bottom: 2px #0a425c solid;
     font-size: 0.8rem;
+}
+
+.comentarios dl{
+    background-color: white;
+    border: 2px rgb(206, 206, 206) solid;
+    border-radius: 1em;
+    margin: 0;
+    padding: 0.5em 1em;
+    color: grey;
+    text-align: left;
+}
+
+.comentarios dt{
+    border-top: 1px #e0e0e0 solid;
+    font-family: 'Exo 2', sans-serif;
+    padding: 1em 0 0.2em 0;
+    color: #505050;
+}
+
+.comentarios dd{
+    padding-bottom: 0.5em;
+}
+
+.comentarios dt:first-of-type{
+    border-top: none;
+}
+
+.header__contato{
+    color: white;
+    background-color: #165c7d;
+    text-align: left;
+    display: block;
+    align-items: start;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+       
+}
+
+.header__contato div{
+    display: block;
+    padding-top: 0.3em;
+}
+
+.header__contato i{
+    border: 0.1em solid #ffffff;
+    border-radius: 100%;
+    padding: 0.4em;
+    margin: 0.5em;
+    margin-left: 1em;
+    font-size: 0.9rem;
+}
+
+.header__contato h1{
+    display: inline-block;
+    font-size: 1rem;
 }
 
 .formulario{
@@ -382,18 +474,148 @@ footer p{
 }
 
 .formulario button{
-    background-color: #007041;
-    border: black 2px solid;
+    background-color: inherit;
 }
-
 
 .redes__sociais {
     background-color: #00a9ce;
     color: white;
     border: 3px #007dba solid;
     border-radius: 1em;
-    padding: 1em;
+    padding: 0.4em;
     margin-bottom: 1rem;
+    
 }
 
+.redes__sociais ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-inline-start: 0;
+    font-size: 4rem;
+    margin: 0;
+}
 
+.redes__sociais li{
+    padding: 0.2em;
+    border-left: rgba(226, 226, 226, 0.253) 1px solid;
+}
+
+.redes__sociais li:first-of-type {
+    border-left: none;
+}
+
+@media screen and (min-width: 735px) {
+
+
+    .header__index{
+        background-image: url(/statics/img/paisagem.png);
+        background-size: cover;
+        background-position: bottom;
+        background-color: #00a9ce;
+        color: white;
+        border: 3px #0a425c solid;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        padding: 1em;
+    }
+
+    .nav__index{
+        background-color: #18181859;
+        display: block;
+        position: sticky;
+        top: -2px;
+        
+    }
+
+    .nav__index ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nav__index li{
+        width: 31.3%;
+    }
+
+    .atalho--2{
+        border-bottom-left-radius: 0.5em;
+    }
+
+    .atalho--4{
+        border-bottom-left-radius: 0;
+    }
+
+    .viagem div{
+        display: inline-block;
+        flex-direction: column;
+    }
+    
+    .viagem div i{
+        margin: 1em 0 1em 30%;
+        flex-direction: row;
+
+    }
+
+    .viagem div h3{
+        margin: 1em 30% 1em 1em;
+        flex-direction: row;
+    }
+
+    .inverter p{
+        order: -1;
+    }
+
+    .inverter_img img{
+        order: -1;
+    }
+    
+    .nav__viagem div{
+        border-radius: 1em;
+    }
+
+    .nav__viagem ul{
+        display: none;
+    }
+
+
+    .viagem span {
+        display: flex;
+    }
+
+    .viagem .img {
+        width: 50%;
+        margin: 1em;
+    }
+
+    .viagem p {
+        margin: 3em;
+        width: 40%;
+    }
+
+    .map{
+        height: 450px;
+    }
+
+    .video{
+        height: 450px;
+    }
+
+    /* .viagem--terceiro h3{
+        margin: 1em
+    } */
+
+    #video , #localizacao, #comentarios{
+        margin: 1em;
+    }
+
+    .redes__sociais ul{
+        justify-content: space-around;
+    }
+
+    .redes__sociais li{
+    padding: 0 5%;
+    margin: 0;
+    }
+
+}
