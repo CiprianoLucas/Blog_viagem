@@ -539,6 +539,14 @@ footer p{
     background-color: inherit;
 }
 
+.formulario input, textarea, select{
+    border: #aaaaaa 1px solid;
+    border-radius: 1em;
+    text-indent: 1em;
+    padding: 0.5em 1em;
+    
+}
+
 .redes__sociais {
     background-color: #00a9ce;
     color: white;
@@ -579,6 +587,14 @@ footer p{
 
 
 @media screen and (min-width: 735px) {
+
+    .viagem h3{
+        font-size: 2rem;
+    }
+
+    .viagem i{
+        font-size: 2rem;
+    }
 
 
     .header__index{
