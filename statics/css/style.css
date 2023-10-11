@@ -33,6 +33,13 @@ h4 {
 
 }
 
+
+p{
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    max-width: 500px;
+}
+
 .container {
     display: flexbox;
     margin: 0.5em;
@@ -49,6 +56,11 @@ h4 {
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     padding: 1em;
+
+    opacity: 0;
+    animation:
+        spin 2s 0.5s forwards ease,
+        fade-in 2s 0.5s forwards ease;
 }
 
 .header__index i{
@@ -57,10 +69,21 @@ h4 {
     padding: 0.5em;
     margin-bottom: 15px;
     font-size: 3rem;
+
+    transform: rotate(-30deg);
+    opacity: 0;
+    animation:
+        spin 1s 0.5s forwards ease,
+        fade-in 1s 0.5s forwards ease;
+}
+
+.header__index p{
+    display: inline-block;
 }
 
 .nav__index{
     position: relative;
+    color: white;
    
 }
 
@@ -73,6 +96,8 @@ h4 {
 
 .nav__index ul li{
     margin-top: 2px;
+
+    
 }
 
 
@@ -100,7 +125,13 @@ h4 {
     background-color: #00b140;
     font-size: 1.5rem;
     padding: 0.5em; 
+
+    opacity: 0;
+    animation:
+        fade-in 0.5s 1.5s forwards ease;
+
 }
+
 .atalho--3{
     display: block;
     border: 3px #007dba solid;
@@ -108,6 +139,10 @@ h4 {
     background-color: #00a9ce;
     font-size: 1.5rem;
     padding: 0.5em; 
+
+    opacity: 0;
+    animation:
+        fade-in 1s 1.5s forwards ease;
 }
 .atalho--4{
     display: block;
@@ -118,6 +153,10 @@ h4 {
     padding: 0.5em; 
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+
+    opacity: 0;
+    animation:
+        fade-in 1.5s 1.5s forwards ease;
 }
 
 .viagem {
@@ -128,6 +167,16 @@ h4 {
     border-radius: 1em;
     padding: 1em;
     margin-bottom: 1rem;
+
+    opacity: 0;
+    animation:
+        fade-in 1s 2s forwards ease;
+}
+
+.fade_1s{
+    opacity: 0;
+    animation:
+        fade-in 1s 0.7s forwards ease;
 }
 
 .viagem div{
@@ -208,6 +257,7 @@ h4 {
 }
 
 footer {
+    justify-content: center;
     color: white;
 }
 
@@ -221,6 +271,7 @@ footer a{
 }
 
 footer p{
+    display: inline-block;
     font-size: 14px;
     color: grey;
 }
@@ -250,6 +301,7 @@ footer p{
     display: flex;
     align-items: start;
     justify-content: space-between;
+    z-index: 1;
     position: sticky;
     top: 0;       
 }
@@ -294,6 +346,10 @@ footer p{
     border: 3px #0a425c solid;
     border-radius: 1em;
     margin-bottom: 1em;
+
+    opacity: 0;
+    animation:
+        fade-in 1s 0.5s forwards ease;
 
 }
 
@@ -392,8 +448,10 @@ footer p{
     display: block;
     align-items: start;
     justify-content: space-between;
+    z-index: 1;
     position: sticky;
     top: 0;
+    
        
 }
 
@@ -424,6 +482,10 @@ footer p{
     border-radius: 1em;
     padding: 1em;
     margin-bottom: 1rem;
+
+    opacity: 0;
+    animation:
+        fade-in 1s forwards ease;
 }
 
 .formulario i {
@@ -484,6 +546,10 @@ footer p{
     border-radius: 1em;
     padding: 0.4em;
     margin-bottom: 1rem;
+
+    opacity: 0;
+    animation:
+        fade-in 1s 1s forwards ease;
     
 }
 
@@ -500,11 +566,17 @@ footer p{
 .redes__sociais li{
     padding: 0.2em;
     border-left: rgba(226, 226, 226, 0.253) 1px solid;
+    opacity: 0;
+    animation:
+        fade-in 1s 1.5s forwards ease;
 }
+
+
 
 .redes__sociais li:first-of-type {
     border-left: none;
 }
+
 
 @media screen and (min-width: 735px) {
 
@@ -524,6 +596,7 @@ footer p{
     .nav__index{
         background-color: #18181859;
         display: block;
+        z-index: 1;
         position: sticky;
         top: -2px;
         
@@ -535,7 +608,7 @@ footer p{
     }
     
     .nav__index li{
-        width: 31.5%;
+        width: 33%;
     }
 
     .atalho--2{
@@ -581,6 +654,7 @@ footer p{
 
     .viagem span {
         display: flex;
+        justify-content: center;
     }
 
     .viagem .img {
@@ -614,8 +688,19 @@ footer p{
     }
 
     .redes__sociais li{
-    padding: 0 5%;
-    margin: 0;
+        border: none;
     }
 
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+    }
 }
